@@ -1,0 +1,266 @@
+.body-main {
+  margin-bottom: 55px;
+}
+
+/* Стили категорий */
+
+.picture-block {
+  display: inline-block;
+  display:flex;
+  justify-content: center; 
+  align-items: center; 
+  overflow: hidden;
+  max-width: 640px;
+  margin: 8px auto;
+  width: 90%;
+  height: 100px;
+  text-align: center;
+  position: relative;
+}  
+
+.picture-block-cover {
+  background: rgba(0, 0, 0, 0.25); 
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.picture-text {
+  font-size: 24px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  width:95%;
+  z-index: 2;
+}
+
+.picture-block:active, .picture-block:link, .picture-block:visited  {
+ text-decoration: none;
+}
+
+/* Стили блюд */
+
+.columns {
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  margin: 5px auto;
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #aaa;
+}
+
+.columns figure {
+  border: none;
+  margin: 5px;
+  padding: 0;
+}
+
+.columns figure img {
+  width: 100%; height: auto;
+  padding-bottom: 0;
+  margin-bottom: 5px;
+}
+
+.description-img {
+  max-width: 140px;
+  text-align: center;
+}
+
+.columns figure figcaption {
+  font-size: .7rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+figure {
+  margin-bottom: 10px !important;
+  position: relative;
+}
+
+.columns a { 
+  color: #666; 
+  text-decoration: none; 
+  transition: .4s color;
+}
+
+.dishicons {
+  position: absolute;
+  background-color: #dc3545;
+  top: -3px;
+  margin: 3px;
+}
+
+.dishicons-img {
+  height: 18px !important;
+  width: auto !important;
+  margin: 1px !important;
+}
+
+.dishicons-img-size {
+  height: 25px !important;
+}
+
+
+/**
+ * dish
+ */
+
+ .dishprice {
+  color: #F00;
+  font-weight: bold;
+  margin: 5px;
+  font-size: 0.9rem;
+}
+
+.cut_name {
+  height: 25px;
+}
+
+.btn-buy {
+  display: block;
+  margin: 0 auto;
+}
+
+.btn-width {
+  height: 30px;
+  padding: 0 10px;
+}
+
+/**
+ * likes
+ */
+
+ .like-container {
+  display: flex;
+  justify-content: flex-start;
+  width: 144px;
+  height: 15px;
+}
+
+.heart-container {
+  width: 15px;
+  height: 15px;
+}
+
+.votes_count {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+}
+
+.votes_count span {
+  padding-left: 10px;
+}
+
+/* Стили для рейтинга ------------------------------- */
+
+.stars {
+  margin  : 0 0 2em;
+  padding : 0;
+}
+
+.starRating:not(old){
+  display        : inline-block;
+  width          : 15em;
+  height         : 3em;
+  overflow       : hidden;
+  vertical-align : bottom;
+}
+
+.starRating:not(old) > .star_input{
+  margin-right : -200%;
+  opacity      : 0;
+}
+
+.starRating:not(old) > .star_label{
+  display         : block;
+  float           : right;
+  position        : relative;
+  background      : url("../../img/star-off.svg");
+  background-size : contain;
+}
+
+.starRating:not(old) > .star_label:before{
+  content         : '';
+  display         : block;
+  width           : 3em;
+  height          : 3em;
+  background      : url("../../img/star-on.svg");
+  background-size : contain;
+  opacity         : 0;
+  transition      : opacity 0.2s linear;
+}
+
+.starRating:not(old) > .star_label:hover:before,
+.starRating:not(old) > .star_label:hover ~ .star_label:before,
+.starRating:not(:hover) > :checked ~ .star_label:before{
+  opacity : 1;
+}
+
+/* МОДАЛЬНОЕ ОКНО */
+.modal-dialog-full-width {
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width:none !important;
+
+}
+
+.modal-content-full-width  {
+  height: auto !important;
+  min-height: 100% !important;
+  border-radius: 0 !important;
+  background-color: #ececec !important 
+}
+
+.modal-header-full-width  {
+  border-bottom: 1px solid #9ea2a2 !important;
+}
+
+.modal-footer-full-width  {
+  border-top: 1px solid #9ea2a2 !important;
+}
+
+.btn-modal-margin {
+  margin: 5px;
+}
+
+.menu-button {
+  width: 220px;
+  margin-bottom: 10px;
+}
+
+.a-button {
+  display: inline-block;
+  text-align: center;
+  width: 220px;
+  color: white;
+  font-size: 1.25rem;
+  text-decoration: none;
+  padding: .4em 2em;
+  outline: none;
+  border: 1px solid transparent;
+  border-color: #dc3545;
+  border-radius: 6px;
+  background: #dc3545;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.a-button:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.a-button:focus {
+  text-decoration: none;
+  color: white;
+}
